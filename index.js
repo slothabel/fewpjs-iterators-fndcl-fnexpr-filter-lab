@@ -11,7 +11,7 @@ function findMatching(drivers, str){
 function fuzzyMatch(drivers, str){
     let foundMatch = drivers.filter( driver =>
         // lowercase current iterated driver. call indexOf on that lowercased version of the driver name
-        driver.toLowerCase().indexOf(str.toLowerCase()) 
+        driver.toLowerCase().indexOf(str.toLowerCase(), 0) 
     )
     return foundMatch
 }
