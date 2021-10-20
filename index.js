@@ -25,10 +25,7 @@ function fuzzyMatch(drivers, str){
 // In this function, each element of the drivers array is a JavaScript object that has a property of name. 
 // The function should return each element whose name property matches the provided string argument.
 function matchName(drivers, str){
-    let foundMatch = drivers.filter( driver =>
-        {return driver.name === str}
-    )
-    return foundMatch
+    return drivers.filter( driver => {return driver.name === str})
 }
 
 
